@@ -11,5 +11,4 @@ if errorlevel 1 (
 )
 
 
-@echo "Copying files to web root"
-xcopy /s /y . d:\home\site\wwwroot\
+packages\FAKE\tools\FAKE.exe %* --fsiargs deploy.fsx
