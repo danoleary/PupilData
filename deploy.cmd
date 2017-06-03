@@ -10,7 +10,6 @@ if errorlevel 1 (
   exit /b %errorlevel%
 )
 
-REM packages\FAKE\tools\FAKE.exe deploy.fsx
 
 @echo "Copying files to web root"
 xcopy /s /y . d:\home\site\wwwroot\
