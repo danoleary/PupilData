@@ -33,8 +33,11 @@ Target "BuildSolution" (fun _ ->
 
 Target "Deploy" Kudu.kuduSync
 
-"StageWebsiteAssets"
-==> "BuildSolution"
+// "StageWebsiteAssets"
+// ==> "BuildSolution"
+// ==> "Deploy"
+
+"BuildSolution"
 ==> "Deploy"
 
 RunTargetOrDefault "Deploy"
