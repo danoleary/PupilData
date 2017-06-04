@@ -1,2 +1,4 @@
 FSharp.Core
 Suave
+fsharp.data
+newtonsoft.json
