@@ -9,6 +9,13 @@ setlocal enabledelayedexpansion
 .paket\paket.bootstrapper.exe
 .paket\paket.exe restore
 
+:: run npm install and fable
+cd src\client
+npm install
+node_modules\.bin\fable
+cd ..
+cd ..
+
 :: Start main build script
 packages\FAKE\tools\FAKE.exe deploy.fsx
 

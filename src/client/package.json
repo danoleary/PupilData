@@ -1,0 +1,23 @@
+{
+    "name": "school-data",
+    "version": "1.0.0",
+    "dependencies": {
+        "babel-core": "^6.24.0",
+        "babel-loader": "^6.4.1",
+        "babel-plugin-transform-runtime": "^6.23.0",
+        "babel-runtime": "^6.23.0",
+        "fable-compiler": "^0.7.50",
+        "fable-core": "^0.7.29",
+        "fable-elmish": "^0.8.1",
+        "fable-elmish-react": "^0.8.3",
+        "fable-powerpack": "^0.0.20",
+        "fable-react": "^0.8.5",
+        "react": "^15.4.2",
+        "react-dom": "^15.4.2",
+        "source-map-loader": "^0.2.0",
+        "webpack": "^2.3.2"
+    },
+    "scripts": {
+        "build": "fable"
+    }
+}

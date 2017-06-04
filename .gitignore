@@ -2,3 +2,5 @@ build/
 packages/
 src/bin/
 src/obj/
+src/client/node_modules/
+src/client/public/

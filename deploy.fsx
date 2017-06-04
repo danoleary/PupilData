@@ -20,6 +20,7 @@ Target "StageWebsiteAssets" (fun _ ->
         blacklist
         |> Seq.forall(not << file.Contains)
     Kudu.stageFolder (Path.GetFullPath @"src/WebHost") shouldInclude)
+    
 
 Target "BuildSolution" (fun _ ->
     solutionFile
