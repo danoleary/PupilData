@@ -11,8 +11,8 @@ setlocal enabledelayedexpansion
 
 :: run npm install and fable
 cd src\client
-eval npm install
-eval node_modules\.bin\fable
+npm install
+node_modules\.bin\fable
 cd ..
 cd ..
 
