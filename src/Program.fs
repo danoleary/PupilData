@@ -37,5 +37,5 @@ let main args =
             path "/" >=> Files.browseFile clientRoot "index.html"
         ]
 
-  startWebServer serverConfig (OK "Hello World!")
+  startWebServer serverConfig app
   0
