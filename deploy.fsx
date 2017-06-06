@@ -15,11 +15,13 @@ Target "StageWebsiteAssets" (fun _ ->
         [ "typings"
           ".fs"
           ".references"
-          "tsconfig.json" ]
+          ".json"
+          ".config.js" ]
     let shouldInclude (file:string) =
         blacklist
         |> Seq.forall(not << file.Contains)
-    Kudu.stageFolder (Path.GetFullPath @"src/WebHost") shouldInclude)
+    Kudu.stageFolder (Path.GetFullPath @"src/WebHost") shouldInclude
+    Kudu.stageFolder (Path.GetFullPath @"src/client") shouldInclude)
     
 
 Target "BuildSolution" (fun _ ->

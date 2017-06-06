@@ -3,4 +3,5 @@ packages/
 src/bin/
 src/obj/
 src/client/node_modules/
-src/client/public/
+src/client/public/PupilData/
+src/client/public/src/
